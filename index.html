@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist Pro ✅</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Checklist Pro ✅</h1>
+
+    <div class="checklist-container">
+        <input type="text" id="itemInput" placeholder="Agregar nueva tarea...">
+
+        <select id="priority">
+            <option value="Alta">Alta 🔴</option>
+            <option value="Media">Media 🟠</option>
+            <option value="Baja">Baja 🟢</option>
+        </select>
+
+        <select id="category">
+            <option value="Trabajo">Trabajo 💼</option>
+            <option value="Personal">Personal 🏠</option>
+            <option value="Estudio">Estudio 📚</option>
+            <option value="Compras">Compras 🛒</option>
+        </select>
+
+        <button id="addBtn">Agregar</button>
+
+        <div class="filters">
+            <label>Filtrar: </label>
+            <select id="filterCategory">
+                <option value="Todas">Todas</option>
+                <option value="Trabajo">Trabajo 💼</option>
+                <option value="Personal">Personal 🏠</option>
+                <option value="Estudio">Estudio 📚</option>
+                <option value="Compras">Compras 🛒</option>
+            </select>
+
+            <select id="filterPriority">
+                <option value="Todas">Todas</option>
+                <option value="Alta">Alta 🔴</option>
+                <option value="Media">Media 🟠</option>
+                <option value="Baja">Baja 🟢</option>
+            </select>
+        </div>
+
+        <ul id="checklist"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

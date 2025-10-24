@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.checklist-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 5px 5px 10px 0;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2e8b57;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover { background-color: #246b45; }
+
+ul { list-style: none; padding: 0; margin-top: 20px; }
+
+li {
+    padding: 10px;
+    margin: 5px 0;
+    background: #eee;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: grab;
+}
+
+/* Completadas */
+li.completed { text-decoration: line-through; color: gray; opacity: 0.7; }
+
+/* Prioridades */
+li.Alta { border-left: 5px solid red; }
+li.Media { border-left: 5px solid orange; }
+li.Baja { border-left: 5px solid green; }
+
+/* Categorías */
+li.Trabajo { background-color: #e3f2fd; }
+li.Personal { background-color: #fff3e0; }
+li.Estudio { background-color: #f3e5f5; }
+li.Compras { background-color: #e8f5e9; }
+
+li button {
+    background-color: red;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+li button:hover { background-color: darkred; }
+
+.filters { margin: 10px 0; }
